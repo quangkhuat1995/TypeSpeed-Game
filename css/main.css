@@ -5,6 +5,7 @@
 
 #mainSection {
   flex: 1;
+  margin-bottom: 200px;
 }
 
 #mainSection .test-to-show {
@@ -93,12 +94,12 @@
 }
 
 body {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   overflow: auto;
+  position: relative;
 }
 
 .container-md {
