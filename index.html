@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type Speed Game</title>
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+    <!-- BS4 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <div class="container-md">
+        <p class="rule text-justify">
+          Rule: Try your best to type not only as fast as possible but also
+          accuracy (case-sensitive). The sentence you have to type will be show
+          in dark box below. You DON'T have to hit enter to send answer.
+        </p>
+      </div>
+    </header>
+    <main id="mainSection" class="container-md text-center">
+      <div class="test-to-show">Quang</div>
+      <div class="input-wrapper">
+        <textarea name="text" id="inputText" spellcheck="false"></textarea>
+      </div>
+      <div class="main__action">
+        <span id="myTime">00:00:00</span>
+        <button class="btn btn-warning flex-1" id="btnContinue" disabled>
+          Next <span>Challenge</span>
+        </button>
+        <button class="btn btn-warning" id="btnReset">RESET</button>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="container-md">
+        <div class="score-wrapper row">
+          <div id="summary" class="col-7">
+            You have type:
+            <span class="red" id="count">0 times</span>
+            with
+            <br />
+            <span id="word" class="red">0 word</span>
+            &asymp;
+            <span id="character" class="red">0 character.</span>
+          </div>
+          <div class="score col-5">
+            Your average speed: <br />
+            <span id="average" class="red">0 word/min.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CUSTOM JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

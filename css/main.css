@@ -1,0 +1,107 @@
+#header .rule {
+  padding: 1rem;
+  background: skyblue;
+}
+
+#mainSection {
+  flex: 1;
+}
+
+#mainSection .test-to-show {
+  padding: 1rem;
+  text-align: left;
+  background: #5e5c5c;
+  color: #f4f4f4;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  max-width: 65%;
+  margin: 20px auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+#mainSection .input-wrapper #inputText {
+  height: 30vh;
+  max-height: 45vh;
+  width: 65%;
+  max-width: 65%;
+  margin: 0 auto;
+  resize: vertical;
+  border: 10px solid;
+  border-radius: 10px;
+  padding: 5px;
+  border-color: #808080;
+}
+
+#mainSection .input-wrapper #inputText:focus {
+  outline: none;
+}
+
+#mainSection .main__action {
+  width: 65%;
+  max-width: 65%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainSection .main__action #myTime {
+  font-size: 2rem;
+  font-weight: 700;
+  flex: 1;
+  text-align: left;
+}
+
+#mainSection .main__action #btnContinue {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  #mainSection .main__action #btnContinue span {
+    display: none;
+  }
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: skyblue;
+  display: flex;
+  align-items: center;
+}
+
+#footer .red {
+  color: red;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: color 1s;
+}
+
+#footer .score {
+  text-align: center;
+  text-align: right;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+.container-md {
+  max-width: 792px;
+}
+/*# sourceMappingURL=main.css.map */
